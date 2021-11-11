@@ -1,0 +1,139 @@
+body{
+    display: block;
+    background: #f1f1f1;
+    color: rgb(184, 182, 180);
+    font-family: Robotto , sans-serif;
+    font-size: 25px;
+    
+}
+a{
+    color: inherit;
+}
+.topbar{
+    background:#2C3E50 ;
+}
+.topbar a{
+    text-decoration: none;
+}
+.topbar-logo  {
+    display: block;
+    text-align: center;
+    font-size: 25px; 
+}
+.topbar-nav{
+    text-align: center;
+}
+.topbar-nav a{
+    display: inline-block;
+    margin: 17px;
+}
+.topbar-nav a:hover ,
+.topbar-nav a:active{
+    color: rgba(255,255,255, .67);
+}
+.container{
+    padding: 0 15px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.site{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.sidebar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.siderbar a{
+    display: block;
+    text-decoration: none;
+    width: 50%;
+    padding: 0.6em 0;
+    transition: color .3s;
+}
+.sidebar a::before{
+    content: "";
+    display: flex;
+    width:15px;
+    height:15px;
+    vertical-align: middle;
+    margin-top: -2px;
+    opacity: 0.67;
+    margin-right: 12px;
+    transition: opacity .3s;
+}
+.sidebar a:hover::before,
+.sidebar a.active::before{
+    opacity: 2;
+}
+.sidebar{
+    background: goldenrod;
+    height: 250px;
+}  
+.main{
+    background: grey;
+    height: 250px;
+}
+.aside{
+    background: green;
+    height: 250px;
+}
+
+.sidebar.sidebar-message::before{
+    background-image: url(img/message.jpg);
+}
+.sidebar.sidebar-event::before{
+    background-image: url(img/calendar.jpg);
+}
+.sidebar.sidebar-group::before{
+    background-image: url(img/groupe.png);
+}
+.sidebar.sidebar-amis::before{
+    background-image: url(img/Amis.jpg);
+}
+.sidebar a:hover{
+    text-decoration: underline;
+}
+.sidebar a:hover,
+.sidebar a.active{
+    color:black; 
+}
+@media only screen and (min-width: 500px) {
+.topbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding : 0 25px;
+}
+.topbar-logo,
+.topbar-nav{
+    padding: 0;
+}
+.topbar-nav a {
+    margin: 0 20px;
+}
+
+}
+@media only screen and (min-width: 1050px) {
+    .site{
+        display: flex;
+}
+}
+.siderbar{
+    display: block;
+    flex: none;
+    width: 180px;
+}
+.main{
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.aside{
+    flex:none;
+    width: 310px;
+}

@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing :border-box;
+    font-family: Ranchoeffect , sans-serif;
+
+}
+html, body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #27AE60;
+    
+
+}
+.wrapper{
+    width: 380px;
+    background: rgb(73, 70, 70);
+    border-radius: 5px;
+}
+.wrapper .title{
+    line-height: 30px;
+    color: blanchedalmond;
+    background: #9994e0;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+.wrapper form{
+    padding: 30px 20px 25px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form .row{
+    height: 30px;
+    background: #292828;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.wrapper form .row1 input{
+    height: 100%;
+    width: 100%;
+    
+
+}
+.wrapper form .button input{
+     
+     
+}
+
