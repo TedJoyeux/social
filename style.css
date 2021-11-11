@@ -1,35 +1,52 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
- body{
-     font-size: 20px;
-     
- }
- .topbar{
-     position: relative;
-     background-color: cadetblue;
-     top:0;
-     left: 0;
-     right: 0;
-     font-weight: 80;
-     padding: 0 55px ;
-     
- }
- .topbar nav a{
-     padding: 20px;
-     color: black;
-     font-family:serif;
-     line-height: 55px;
-     font-weight: 800;
-    
- }
- .topbar nav a:hover {
-     color : grey;
- }
- .main{
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     
+.topbar{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+.topbar *{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.body{
+    display: flex;
+}
+.main{
+    flex-grow: 1;
+}
+.topbar-logo{
+    font-size: 2em;
+}
+.topbar-nav{
+    display: flex;
+    align-items: center;
+}
+.topbar-nav *{
+    padding: 10px 5px;
+}
+.topbar-nav .menu:hover{
+    background-color: #356;
+}
+.search{
+    position: relative;
+}
+.search .icon{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
 
- }
- .sidebar{
- }
+.search input{
+    padding: 5px 15px 5px 10px;
+    border-radius: 15px;
+    border: 2px solid cadetblue;
+    font-size: 1.2em;
+    color: darkblue!important;
+}
