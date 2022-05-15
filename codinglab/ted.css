@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(95, 92, 92);
+    color: rgb(37, 37, 35);
+    height: 50px;
+    align-items: center;
+    padding : 30px;
+    
+}
+
+.header div a:hover{
+    color:tan;
+    padding-left: 10px;
+    
+}
+.header a{
+color: rgb(39, 25, 7);
+    text-decoration: none;
+    padding-left: 20px;
+    opacity : 1;
+}
+
+.img{ 
+    margin-top: 60px; 
+    
+}
+.main{
+    float: left;
+    width : 60%;
+    height: 150px;
+    background: lightgrey;
+    box-shadow: 0 4px 25px black;
+     z-index: 2;
+     margin-top: 20px;
+     position: relative;
+  
+
+}
+.sidebar{
+    float: right;
+    width: 40%;
+    height : 350px;
+    background: grey;
+    z-index: 1;
+    margin-top: 20px;
+    position :relative;
+}
+.article{
+    margin-top: 0;
+    overflow: hidden;
+}
+.article-date{
+margin-top: 0;
+padding-top: 20px;
+}
+.footer{
+    clear: both;
+}
