@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+.topbar{
+    background-color: rgb(30, 31, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    border-radius: 4px;
+    
+}
+.topbar *{
+    color: rgb(170, 164, 164);
+    text-decoration: none;
+}
+.body{
+    display: flex;
+}
+.main{
+    flex-grow: 1;
+}
+.topbar-logo{
+    font-size: 2em;
+}
+.topbar-nav{
+    display: flex;
+    align-items: center;
+}
+.topbar-nav *{
+    padding: 10px 5px;
+}
+.topbar-nav .menu:hover{
+    background-color: rgb(29, 38, 43);
+}
+.container{
+    background: #fff;
+    display: flex;
+
+}
+.sidebar{
+    margin-right: 25px;
+    width: 400px;
+    height: 250px;
+    
+}
+.sidebar .cc{
+    margin: auto;
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.claret{
+    background:rgb(13, 13, 252);
+    border-radius: 4px;
+    
+}
+
+.wesh{
+    color:black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.main{
+    width: 400px;
+    height: 250px;
+}
+.ajout{
+    background: blue;
+    color: rgb(121, 48, 48);
+    border-radius: 4px;
+}
+.col{
+    margin: auto;
+}
+
+.table2{
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.lien{
+    color:black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 3px;
+}
+.col{
+    margin-right: 3px;
+}
+
